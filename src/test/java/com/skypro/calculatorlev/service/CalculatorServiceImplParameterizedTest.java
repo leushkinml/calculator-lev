@@ -11,6 +11,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.List;
 import java.util.stream.Stream;
 // Статические импорты. В тестах использовать можно, в основном коде не рекомендуется
+import static com.skypro.calculatorlev.constants.CalculatorServiceImplTestConstants.*;
 import static com.skypro.calculatorlev.service.CalculatorServiceImplTest.*;
 import static org.junit.jupiter.api.Assertions.*; // - вынесли из методов для упрощения кода
 import static org.junit.jupiter.params.provider.Arguments.*;// - вынесли из методов для упрощения кода
