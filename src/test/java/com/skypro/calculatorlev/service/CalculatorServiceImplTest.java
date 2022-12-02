@@ -9,20 +9,22 @@ class CalculatorServiceImplTest {
 
     private final CalculatorServiceImpl calculatorService = new CalculatorServiceImpl();
 
-    private static final Integer NUMBER_1 = 5;
-    private static final Integer NUMBER_2 = 55;
+    public static final Integer NUMBER_1 = 5;
+    public static final Integer NUMBER_2 = 55;
     private static final Integer NUMBER_3 = 15;
     private static final Double NUMBER_4 = 5.0;
     private static final Double NUMBER_5 = 15.0;
     private static final Double NUMBER_6 = 2.0;
-    private static final Integer EXPECTED_RESULT_1 = 10;
-    private static final Integer EXPECTED_RESULT_2 = 60;
+    public static final Integer NUMBER_7 = -110;
+    public static final Integer EXPECTED_RESULT_1 = 10;
+    public static final Integer EXPECTED_RESULT_2 = 60;
     private static final Integer EXPECTED_RESULT_3 = 0;
     private static final Integer EXPECTED_RESULT_4 = 50;
     private static final Integer EXPECTED_RESULT_5 = 25;
     private static final Integer EXPECTED_RESULT_6 = 75;
     private static final Double EXPECTED_RESULT_7 = 1.0;
     private static final Double EXPECTED_RESULT_8 = 7.5;
+    public static final Integer EXPECTED_RESULT_9 = -55;
 
 
     @Test

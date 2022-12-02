@@ -11,6 +11,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.List;
 import java.util.stream.Stream;
 // Статические импорты. В тестах использовать можно, в основном коде не рекомендуется
+import static com.skypro.calculatorlev.service.CalculatorServiceImplTest.*;
 import static org.junit.jupiter.api.Assertions.*; // - вынесли из методов для упрощения кода
 import static org.junit.jupiter.params.provider.Arguments.*;// - вынесли из методов для упрощения кода
 
@@ -43,11 +44,13 @@ public class CalculatorServiceImplParameterizedTest {
             calculatorService.divide(1.0, 0.0);
         });
     }
-    public static List<Arguments> plusList() {  // Можно писать Списками, можно писать Стримами.
+    public static List<Arguments> plusList() {
+        // Можно писать Списками, можно писать Стримами.
+        // Можно значения в аргумент передавать, либо использовать константы
         return List.of(
-                of(5,5,10),
-                of(55,5,60),
-                of(55,-110,-55)
+                of(NUMBER_1,NUMBER_1,EXPECTED_RESULT_1),
+                of(NUMBER_2,NUMBER_1,EXPECTED_RESULT_2),
+                of(NUMBER_2,NUMBER_7,EXPECTED_RESULT_9)
         );
     }
     public static List<Arguments> minusList() {
